@@ -19,7 +19,7 @@ def detect_digits(text: str):
         i+=1
     return digits
 
-with open("day01/example2.txt") as f:
+with open("example2.txt") as f:
     input_lines = [line.strip() for line in f.readlines()]
     total = 0
     for text in input_lines:
@@ -27,7 +27,7 @@ with open("day01/example2.txt") as f:
         total = total + 10 * digit_list[0] + digit_list[-1]
     assert total == 281
 
-with open("day01/input.txt") as f:
+with open("input.txt") as f:
     input_lines = [line.strip() for line in f.readlines()]
     total = 0
     for text in input_lines:
